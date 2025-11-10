@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+
+<div class="box1">This is a height & width example.</div> 
+<div class="box2">Resize the browser window to test max-width.</div> 
+<div class="box3">calculate total element width.</div>
+<div class="box4">Experiment with padding and border shorthand.</div>
+<div class="box5">Center a <div> element using margin auto.</div>
+
+    </div>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+div{
+
+div.box1{
+
+    height: 200px;
+    width: 50%;
+    background-color: lightblue;
+}
+div.box2{
+
+    height: 150px; 
+max-width: 500px; 
+background-color: lightgreen; 
+}
+
+
+div.box3 { 
+width: 300px; 
+padding: 20px; 
+border: 5px solid gray; 
+margin: 10px; 
+}
+
+
+div.box4 { 
+padding: 25px 50px 75px 100px; 
+border: 5px solid red; 
+border-radius: 10px; 
+background-color: lightcoral; 
+}
+
+div.box5 { 
+width: 300px; 
+margin: auto; 
+border: 2px solid blue; 
+}
+
+
+
+}
