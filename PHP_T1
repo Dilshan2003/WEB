@@ -1,0 +1,73 @@
+<?php
+
+//print "Running my First PHP Program using XAMPP"
+/*$foo =25;
+$bar ="Hello";
+
+$foo =($foo*8);
+//$bar=($bar*8);
+
+echo $foo;
+*/
+/*
+$name="wayamba";
+
+echo "Hello =$name";
+//echo 'Hello= '. $name';
+echo 'Hello=' .$name;
+print "Hello world"
+
+*/
+/*
+$colors =array('red','blue','green');
+echo $colors[0];
+
+$list =array(0=> "apples",1=>"oranges",2=>"grapes");
+$list=array("make"=>"cessna","model"=>"c210","year"=>1960,3=>"sold");
+$list[4]=7;
+$list["day"]="Tuesday";
+$list[]=17;
+
+echo $list[5]
+*/
+
+
+$products=[
+    ["name"=>"Laptop","price"=>150000],
+    ["name"=>"Mouse","price"=>2500],
+    ["name"=>"Keyboard","price"=>4500],
+    ["name"=>"Headphones","price"=>8000]
+    ];
+$products[]=["name"=>"Webcam","price"=>5500];
+
+
+echo "<h2>Product List</h2>";
+echo "<table border='1' cellpadding='8' cellspacing='0'>
+<tr>
+    <th>Product</th>
+    <th>Price(LKR)</th>
+</th>";    
+
+
+foreach ($products as $p){
+    echo "<tr>
+            <td>{$p['name']}</td>
+            <td>{$p['price']}</td>
+            </tr>";
+}
+
+
+echo "</table>";
+
+$total=0;
+
+
+foreach ($products as $p){
+  $total+=$p['price'];
+}
+
+
+echo "<h3>Total value: LKR $total</h3>";
+
+?>
+
